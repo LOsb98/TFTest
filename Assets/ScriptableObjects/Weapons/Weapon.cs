@@ -5,9 +5,8 @@ using UnityEngine;
 public abstract class Weapon : ScriptableObject
 {
     public int clipSize;
-    public int fireRate;
-    public int shotsPerShot;
-    public int damage;
+    public float fireRate;
+    public float reload;
     public GameObject model;
 
     public abstract void Initialize(GameObject obj);

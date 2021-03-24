@@ -6,7 +6,8 @@ using UnityEngine;
 public class HitscanWeapon : Weapon
 {
     public float range;
-    public float spead;
+    public float spread;
+    public int shotsPerShot;
 
     private HitscanRaycast drawRay;
 

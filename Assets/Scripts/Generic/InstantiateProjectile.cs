@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class InstantiateProjectile : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject viewport;
+    public Transform projectilePos;
 
-    // Update is called once per frame
-    void Update()
+    public void Instantiate(GameObject obj)
     {
-        
+        Instantiate(obj, projectilePos.position, transform.localRotation * viewport.transform.rotation);
     }
 }

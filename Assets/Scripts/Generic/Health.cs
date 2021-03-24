@@ -4,15 +4,31 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private int currentHealth;
+    public int CurrentHealth
+    {
+        get { return currentHealth; }
+        set
+        {
+            currentHealth = value;
+            if (currentHealth <= 0) Destroy(gameObject, 0f);
+        }
+    }
+    public int maxHealth;
+
+    void Awake()
+    {
+        CurrentHealth = maxHealth;
+    }
+
+    void Update()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public void TakeDamage(int damage)
     {
-        
+        CurrentHealth -= damage;
+        print("Took " + damage + " damage");
     }
 }

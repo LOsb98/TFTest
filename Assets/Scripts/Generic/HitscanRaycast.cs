@@ -4,15 +4,8 @@ using UnityEngine;
 
 public class HitscanRaycast : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void FireRay()
     {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
