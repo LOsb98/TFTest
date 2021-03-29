@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Weapon/Hitscan Weapon")]
 public class HitscanWeapon : Weapon
 {
+    public int damage;
     public float range;
     public float spread;
     public int shotsPerShot;
@@ -18,6 +19,6 @@ public class HitscanWeapon : Weapon
 
     public override void Fire()
     {
-        Debug.Log("FIRED HITSCAN");
+        drawRay.FireRay(damage, range, spread, shotsPerShot);
     }
 }

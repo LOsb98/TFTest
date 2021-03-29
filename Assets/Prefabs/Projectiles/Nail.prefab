@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3545820335089572109}
   - component: {fileID: 3545820335089572108}
   - component: {fileID: 7512943815853519143}
+  - component: {fileID: -8137844010668537849}
   m_Layer: 0
   m_Name: Nail
   m_TagString: Untagged
@@ -94,9 +95,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 093b1c00c3d4e074ebe6c4f5edf1b22e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 40
   damage: 7
   hitboxSize: 0.3
   collisionLayer:
     serializedVersion: 2
     m_Bits: 192
+--- !u!114 &-8137844010668537849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3545820335089572111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec1407c30e9ba9f4f858241212fcf41a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTime: 3

@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70badd702f57b2445bb0e6c15f7afc09, type: 3}
   m_Name: Assault Rifle
   m_EditorClassIdentifier: 
-  clipSize: 0
-  fireRate: 0
-  shotsPerShot: 0
-  damage: 0
+  clipSize: 30
+  fireRate: 0.15
+  reload: 3
   model: {fileID: 5291354665378731824, guid: 25e6161fd3215764e936ceb76c4e5f34, type: 3}
-  range: 0
-  spead: 0
+  damage: 6
+  range: 100
+  spread: 0.4
+  shotsPerShot: 1

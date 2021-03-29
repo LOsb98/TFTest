@@ -8,6 +8,7 @@ public class PlayerUIHandler : MonoBehaviour
     public Text ammoText;
     public Text clipText;
     public Text weaponName;
+    public GameObject reloadBar;
 
     public void Refresh(int ammo, int clip, string weapon)
     {

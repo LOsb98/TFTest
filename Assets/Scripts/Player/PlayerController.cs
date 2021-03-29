@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         //Only grounded movement for now
-        if (grounded) movement.groundMove(rb, move);
+        if (grounded) movement.GroundMove(rb, move, speed);
         //rb.velocity = new Vector3(move.x, rb.velocity.y, move.z)
     }
 
