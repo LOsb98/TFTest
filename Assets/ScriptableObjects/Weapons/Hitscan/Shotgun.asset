@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Shotgun
   m_EditorClassIdentifier: 
   clipSize: 6
-  fireRate: 0.8
-  reload: 4
+  fireRate: 0.6
+  reload: 3
   model: {fileID: 8654681875435137460, guid: 4523b3c1ff63b3b43a95bcc58c50a490, type: 3}
   damage: 7
   range: 30
-  spread: 1
+  spread: 4
   shotsPerShot: 10

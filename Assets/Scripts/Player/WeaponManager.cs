@@ -14,10 +14,10 @@ public class WeaponManager : MonoBehaviour
 
     #region Weapon timers and data
     public float shotTimer;
-    public float[] reloadTime = new float[2];
-    public int[] clip = new int[2];
-    private GameObject[] weaponModels = new GameObject[2];
-    public Weapon[] weaponData = new Weapon[2];
+    public float[] reloadTime;
+    public int[] clip;
+    public GameObject[] weaponModels;
+    public Weapon[] weaponData;
 
     private int activeWeapon = 0;
     public int ActiveWeapon

@@ -18,5 +18,5 @@ MonoBehaviour:
   model: {fileID: 8654681875435137460, guid: bc8ea9e6d4a507242b33b83698f55fac, type: 3}
   damage: 15
   range: 100
-  spread: 0.3
+  spread: 1.2
   shotsPerShot: 1

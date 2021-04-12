@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 617371726}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: ProjectilePos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4225389826182322882}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: CamPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 791784603815004120}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.57, z: 0.86}
+  m_LocalPosition: {x: 0, y: 0.57, z: 0.18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 617371726}
@@ -74,7 +74,7 @@ GameObject:
   - component: {fileID: 729751696070478998}
   - component: {fileID: 1889728688}
   - component: {fileID: 1889728689}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: WeaponHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,15 +108,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UIHandler: {fileID: 0}
+  weaponPos: {fileID: 0}
+  shotTimer: 0
   reloadTime:
   - 0
   - 0
-  shotTimer: 0
   clip: 0000000000000000
   weaponData:
-  - {fileID: 11400000, guid: 8a50a8b3286ef5946965b043643ef3ad, type: 2}
-  - {fileID: 11400000, guid: 57b503856b390ea479166e1fe9c546ae, type: 2}
-  weaponPos: {fileID: 0}
+  - {fileID: 11400000, guid: 2703a8ecba757ee41af18183fdefd1a1, type: 2}
+  - {fileID: 11400000, guid: 5e4b5ef159c1e28409f66a993cf4cfa6, type: 2}
 --- !u!114 &1889728688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,6 +143,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8944fd97c2d53684a83d8d09c163d597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  viewport: {fileID: 4225389826182322882}
+  hitLayer:
+    serializedVersion: 2
+    m_Bits: 192
+  hitMark: {fileID: 7335035219878341604, guid: 45262ad4b51c78d4883c56a618562db7, type: 3}
 --- !u!1 &4319606705256019394
 GameObject:
   m_ObjectHideFlags: 0
@@ -154,7 +159,7 @@ GameObject:
   - component: {fileID: 4319606705256019398}
   - component: {fileID: 4319606705256019397}
   - component: {fileID: 4319606705256019396}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -237,7 +242,7 @@ GameObject:
   - component: {fileID: 4319606705918916629}
   - component: {fileID: 4319606705918916627}
   - component: {fileID: -7333339787256532288}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: Player 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -274,7 +279,7 @@ CapsuleCollider:
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0, z: 0.17}
 --- !u!54 &4319606705918916629
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -336,7 +341,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4319606706635446095}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: GroundCheckPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
